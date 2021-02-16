@@ -1,8 +1,5 @@
 ﻿using Alura.LeilaoOnline.WebApp.Models;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Alura.LeilaoOnline.WebApp.Dados
 {
@@ -15,7 +12,6 @@ namespace Alura.LeilaoOnline.WebApp.Dados
     Leilao BuscaPorId(int id);
 
     void Incluir(Leilao leilao);
-
 
     void Alterar(Leilao leilao);
 

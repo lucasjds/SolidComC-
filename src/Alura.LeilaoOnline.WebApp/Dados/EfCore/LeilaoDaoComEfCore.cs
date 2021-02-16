@@ -1,11 +1,9 @@
 ﻿using Alura.LeilaoOnline.WebApp.Models;
 using Microsoft.EntityFrameworkCore;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 
-namespace Alura.LeilaoOnline.WebApp.Dados.EfCore 
+namespace Alura.LeilaoOnline.WebApp.Dados.EfCore
 {
   public class LeilaoDaoComEfCore : ILeilaoDao
   {
