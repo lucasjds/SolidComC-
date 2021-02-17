@@ -16,9 +16,7 @@ namespace Alura.LeilaoOnline.WebApp.Dados.EfCore
 
     public IEnumerable<Leilao> BuscarTodos() => _context.Leiloes.Include(l => l.Categoria);
 
-    public IEnumerable<Categoria> BuscarTodasCategorias() => _context.Categorias;
-
-
+  
     public void Incluir(Leilao leilao)
     {
       _context.Leiloes.Add(leilao);
@@ -37,7 +35,7 @@ namespace Alura.LeilaoOnline.WebApp.Dados.EfCore
       _context.SaveChanges();
     }
 
-    public Leilao BuscarLeilaoPorId(int id)
+    public Leilao BuscarPorId(int id)
     {
       return _context.Leiloes.Find(id);
     }
